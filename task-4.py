@@ -60,7 +60,7 @@ def draw_heap(heap):
     pos = {heap[0].id: (0, 0)}
     build_heap_graph(graph, heap, pos)
     colors = [n[1]["color"] for n in graph.nodes(data=True)]
-    labels = {n[0]: n[1]["label"] for n in graph.nodes(data=True)]
+    labels = {n[0]: n[1]["label"] for n in graph.nodes(data=True)}
     plt.figure(figsize=(8, 5))
     nx.draw(
         graph,
